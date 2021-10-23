@@ -1,0 +1,151 @@
+package codigo;
+//CLASE CONTACTO
+public class Contacto {
+    String nombreContacto;
+    String apellidoContacto;
+    Direccion direccion;
+    
+
+    
+    //Setter & Getters
+    public String getNombreContacto() {
+        return nombreContacto;
+    }
+
+    public void setNombreContacto(String nombreContacto) {
+        this.nombreContacto = nombreContacto;
+    }
+
+    public String getApellidoContacto() {
+        return apellidoContacto;
+    }
+
+    public void setApellidoContacto(String apellidoContacto) {
+        this.apellidoContacto = apellidoContacto;
+    }
+    
+    //Funciones
+    void ingresarNombre(){
+        setNombreContacto(nombreContacto);
+    }
+    
+    void ingresarApellido(){
+        setApellidoContacto(apellidoContacto);
+    }
+    
+}
+
+//CLASE TELEFONO
+package codigo;
+
+public class Telefono {
+    String numeroTelefono;
+
+    public String getNumeroTelefono() {
+        return numeroTelefono;
+    }
+
+    public void setNumeroTelefono(String numeroTelefono) {
+        this.numeroTelefono = numeroTelefono;
+    }
+    
+    //Funciones
+    
+    void ingresarNumeroTelefono(){
+        setNumeroTelefono(numeroTelefono);
+    }
+    
+}
+//CLASE DIRECCION
+public class Direccion {
+   String direccionContacto;
+
+    public String getDireccionContacto() {
+        return direccionContacto;
+    }
+
+    public void setDireccionContacto(String direccionContacto) {
+        this.direccionContacto = direccionContacto;
+    }
+    
+    void ingresarDireccion(){
+        setDireccionContacto(direccionContacto);
+    }
+}
+public class Agenda {
+    public static void main(String[] args) {
+        //CONTACTO 1
+        Contacto contacto1 = new Contacto ();
+            contacto1.setNombreContacto("Lisbeth Andrea");
+            contacto1.setApellidoContacto("Curruchiche Rodríguez");
+            Direccion dir = new Direccion();
+            Direccion dir1 = new Direccion();
+            Direccion dir2 = new Direccion();
+            dir.setDireccionContacto("Guatemala,Escuintla,Gomera");
+            dir1.setDireccionContacto("Guatemala,Escuintla,Democracia");
+            dir2.setDireccionContacto("Guatemala,Escuintla,Santa Lucia");
+            Telefono tel1 = new Telefono ();
+            Telefono tel2 = new Telefono ();
+            tel1.setNumeroTelefono("5555555");
+            tel2.setNumeroTelefono("6666666");
+            
+            //IMPRIMIR EN PANTALLA
+            System.out.println("Nombre : "+contacto1.getNombreContacto());
+            System.out.println("Apellidos : "+contacto1.getApellidoContacto());
+            System.out.println("Direccion 1 : "+dir.getDireccionContacto());
+            System.out.println("Direccion 2 : "+dir1.getDireccionContacto());
+            System.out.println("Direccion 3 : "+dir2.getDireccionContacto());
+            System.out.println("Telefono 1: "+tel1.getNumeroTelefono());
+            System.out.println("Telefono 1: "+tel2.getNumeroTelefono());
+            
+        //CONTACTO 2
+        System.out.println("\n");
+        Contacto contacto2 = new Contacto ();
+            contacto2.setNombreContacto("Andrea");
+            contacto2.setApellidoContacto("Rodríguez");
+            Direccion dir3 = new Direccion();
+            Direccion dir4 = new Direccion();
+            Direccion dir5 = new Direccion();
+            dir3.setDireccionContacto("Guatemala,Escuintla,Nueva Concepcion");
+            dir4.setDireccionContacto("Guatemala,Escuintla,Siquinala");
+            dir5.setDireccionContacto("Guatemala,Escuintla,Sipacate");
+            Telefono tel3 = new Telefono ();
+            Telefono tel4 = new Telefono ();
+            tel3.setNumeroTelefono("44444");
+            tel4.setNumeroTelefono("33333");
+           
+        //IMPRIMIR EN PANTALLA
+            System.out.println("Nombre : "+contacto2.getNombreContacto());
+            System.out.println("Apellidos : "+contacto2.getApellidoContacto());
+            System.out.println("Direccion 1 : "+dir3.getDireccionContacto());
+            System.out.println("Direccion 2 : "+dir4.getDireccionContacto());
+            System.out.println("Direccion 3 : "+dir5.getDireccionContacto());
+            System.out.println("Telefono 1: "+tel3.getNumeroTelefono());
+            System.out.println("Telefono 2: "+tel4.getNumeroTelefono());
+            
+        //CONTACTO 3
+        Contacto contacto3 = new Contacto ();
+            contacto3.setNombreContacto("Adolfo");
+            contacto3.setApellidoContacto("Melgar");
+            Direccion dir6 = new Direccion();
+            Direccion dir7 = new Direccion();
+            Direccion dir8 = new Direccion();
+            dir6.setDireccionContacto("Guatemala,Escuintla,Siquinala");
+            dir7.setDireccionContacto("Guatemala,Escuintla,Democracia");
+            dir8.setDireccionContacto("Guatemala,Escuintla,Escuintla");
+            Telefono tel5 = new Telefono ();
+            Telefono tel6 = new Telefono ();
+            tel5.setNumeroTelefono("44444");
+            tel6.setNumeroTelefono("33333");
+           
+        ////IMPRIMIR EN PANTALLA
+            System.out.println("\n");
+            System.out.println("Nombre : "+contacto3.getNombreContacto());
+            System.out.println("Apellidos : "+contacto3.getApellidoContacto());
+            System.out.println("Direccion 1 : "+dir6.getDireccionContacto());
+            System.out.println("Direccion 2 : "+dir7.getDireccionContacto());
+            System.out.println("Direccion 3 : "+dir8.getDireccionContacto());
+            System.out.println("Telefono 1: "+tel5.getNumeroTelefono());
+            System.out.println("Telefono 2: "+tel6.getNumeroTelefono());
+    } 
+}
